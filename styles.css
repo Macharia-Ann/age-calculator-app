@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.container{
+    background: linear-gradient(135deg, rgb(38, 38, 234), lightblue);
+    color: #fff;
+    height: 100vh;
+    padding: 10%;
+}
+.calculator h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.calculator h2 span{
+    color: yellow;
+}
+.input-box{
+    background-color: rgb(131, 131, 235);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 4px;
+    width: 400px;
+}
+.input-box input{
+    padding: 12px;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    position: relative;
+}
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    cursor: pointer;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+
+}
+.input-box button{
+    background-color: yellow;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    margin-left: 10px;
+    padding: 9px 20px;
+}
+.container #result{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
